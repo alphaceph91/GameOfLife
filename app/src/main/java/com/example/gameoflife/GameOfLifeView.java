@@ -15,8 +15,8 @@ import android.view.WindowManager;
 public class GameOfLifeView extends SurfaceView implements Runnable {
 
     public static final int DEFAULT_SIZE = 50;
-    public static final int DEFAULT_ALIVE_COLOR = Color.GREEN;
-    public static final int DEFAULT_DEAD_COLOR = Color.RED;
+    public static final int DEFAULT_ALIVE_COLOR = Color.WHITE;
+    public static final int DEFAULT_DEAD_COLOR = Color.BLACK;
     private Thread thread;
     private boolean isRunning = false;
     private int columnWidth = 1;
