@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
@@ -58,6 +59,11 @@ public class GameOfLifeView extends SurfaceView implements Runnable {
         isRunning = true;
         thread = new Thread(this);
         thread.start();
+    }
+
+    public void setData(int numberOfRows, int numberOfCols, boolean[] data) {
+        //storing data in the world class
+        world.setData(numberOfRows, numberOfCols, data);
     }
 
     public void stop() {
